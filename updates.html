@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMYTEAM - Updates</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+            color: #636363;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #ffb3d9;
+            color: #fff;
+            padding: 1.5em 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px dashed #ff80ab;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #e91e63;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 0.7em 1.2em;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 1px solid #ff80ab;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff80ab;
+            color: #fff;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .updates-section {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .updates-section h2 {
+            color: #e91e63;
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 1.2em;
+        }
+
+        .update-item {
+            margin-bottom: 2.5em;
+            padding: 2em;
+            border: 2px solid #ffb3d9;
+            border-radius: 12px;
+            background-color: #f9f9f9;
+        }
+
+        .update-item h3 {
+            color: #ff80ab;
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 0.8em;
+        }
+
+        .update-item p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1.2em;
+        }
+
+        .update-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .update-item a:hover {
+            color: #0056b3;
+        }
+
+        footer {
+            background-color: #ffb3d9;
+            color: #555;
+            text-align: center;
+            padding: 1.5em 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px dashed #ff80ab;
+            font-size: 0.9em;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                width: 100%;
+                background-color: #ffb3d9;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 10;
+            }
+
+            nav.open {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .hamburger-menu {
+                display: block;
+                cursor: pointer;
+                padding: 10px;
+                border: none;
+                background: transparent;
+            }
+
+            .bar {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 5px 0;
+                transition: 0.4s;
+            }
+
+            .change .bar1 {
+                transform: translate(0, 11px) rotate(-45deg);
+            }
+
+            .change .bar2 {opacity: 0;}
+
+            .change .bar3 {
+                transform: translate(0, -11px) rotate(45deg);
+            }
+
+            .logo {
+                font-size: 1.8em;
+            }
+
+            main {
+                padding: 30px 15px;
+            }
+
+            .updates-section h2 {
+                font-size: 1.8em;
+            }
+
+            .update-item {
+                padding: 1.5em;
+            }
+
+            .update-item h3 {
+                font-size: 1.3em;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">AIMYTEAM</div>
+        <button class="hamburger-menu">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Member Directory</a></li>
+                <li><a href="updates.html">Updates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="updates-section">
+            <h2>Latest Updates</h2>
+            <div class="update-item">
+                <h3>New TikTok Video!</h3>
+                <p>Check out our latest Brookhaven roleplay on TikTok! We had so much fun filming this one, and we think you'll love the storyline and characters. Make sure to like, comment, and share!</p>
+                <a href="https://www.tiktok.com/@aimytelkpfy?_t=ZS-8um4VNwGThg&_r=1" target="_blank">Watch Now on TikTok</a>
+            </div>
+            <div class="update-item">
+                <h3>Community Gaming Session This Weekend!</h3>
+                <p>We're planning a community gaming session in Brookhaven this Saturday at 7 PM EST. Come join us for some fun roleplaying and hang out with the team!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AIMYTEAM</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navMenu = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('change');
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
