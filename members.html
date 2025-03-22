@@ -1,255 +1,261 @@
+Okay, I understand. You want to update the details for AimyPlayz with the following information:
+ * Phone Number: 12345678910
+ * Roblox User: 123456789101112
+ * Gender: Femalee
+ * Age: 99
+Here's the updated HTML code with these changes:
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIMYTEAM - Member Directory</title>
-   <style>
-    /* General Styles */
-body {
-    font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe6f0;
-    color: #636363;
-    line-height: 1.7;
-}
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f0;
+            color: #636363;
+            line-height: 1.7;
+        }
 
-header {
-    background-color: #ffb3d9;
-    color: #fff;
-    padding: 1.5em 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px dashed #ff80ab;
-    position: relative;
-}
+        header {
+            background-color: #ffb3d9;
+            color: #fff;
+            padding: 1.5em 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px dashed #ff80ab;
+            position: relative;
+        }
 
-.logo {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #e91e63;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
+        .logo {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #e91e63;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
 
-nav {
-    display: flex; /* Added this line */
-    justify-content: flex-end; /* Suggestion based on header layout */
-    align-items: center; /* Suggestion based on header layout */
-}
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
 
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-    padding: 0.7em 1.2em;
-    border-radius: 25px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border: 1px solid #ff80ab;
-}
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 0.7em 1.2em;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 1px solid #ff80ab;
+        }
 
-nav ul li a:hover {
-    background-color: #ff80ab;
-    color: #fff;
-}
+        nav ul li a:hover {
+            background-color: #ff80ab;
+            color: #fff;
+        }
 
-main {
-    padding: 40px 20px;
-}
+        main {
+            padding: 40px 20px;
+        }
 
-.members-list {
-    background-color: #fff;
-    padding: 40px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    animation: fadeInUp 1s ease-out;
-}
+        .members-list {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            animation: fadeInUp 1s ease-out;
+        }
 
-.members-list h2 {
-    color: #e91e63;
-    font-size: 2em;
-    margin-top: 0;
-    margin-bottom: 1.2em;
-}
+        .members-list h2 {
+            color: #e91e63;
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 1.2em;
+        }
 
-.members-list p {
-    color: #555;
-    margin-bottom: 1.8em;
-    font-style: italic;
-}
+        .members-list p {
+            color: #555;
+            margin-bottom: 1.8em;
+            font-style: italic;
+        }
 
-.member-item {
-    padding: 1em 0;
-    border-bottom: 1px dashed #ffb3d9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .member-item {
+            padding: 1em 0;
+            border-bottom: 1px dashed #ffb3d9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.member-item:last-child {
-    border-bottom: none;
-}
+        .member-item:last-child {
+            border-bottom: none;
+        }
 
-.member-info {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    gap: 0.8em;
-}
+        .member-info {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            gap: 0.8em;
+        }
 
-.member-tag {
-    background-color: #f0f0f0;
-    color: #333;
-    font-size: 0.7em;
-    padding: 0.3em 0.6em;
-    border-radius: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+        .member-tag {
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 0.7em;
+            padding: 0.3em 0.6em;
+            border-radius: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
 
-.member-details {
-    display: none; /* Initially hide the full details */
-    margin-top: 0.5em;
-    padding-left: 1em;
-    font-size: 0.9em;
-    color: #777;
-}
+        .member-details {
+            display: none; /* Initially hide the full details */
+            margin-top: 0.5em;
+            padding-left: 1em;
+            font-size: 0.9em;
+            color: #777;
+        }
 
-.learn-more-btn {
-    background: none;
-    border: 1px solid #ff80ab;
-    color: #ff80ab;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.8em;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+        .learn-more-btn {
+            background: none;
+            border: 1px solid #ff80ab;
+            color: #ff80ab;
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-.learn-more-btn:hover {
-    background-color: #ff80ab;
-    color: #fff;
-}
+        .learn-more-btn:hover {
+            background-color: #ff80ab;
+            color: #fff;
+        }
 
-footer {
-    background-color: #ffb3d9;
-    color: #555;
-    text-align: center;
-    padding: 1.5em 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 3px dashed #ff80ab;
-    font-size: 0.9em;
-}
+        footer {
+            background-color: #ffb3d9;
+            color: #555;
+            text-align: center;
+            padding: 1.5em 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 3px dashed #ff80ab;
+            font-size: 0.9em;
+        }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    nav {
-        display: none;
-        width: 100%;
-        background-color: #ffb3d9;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 10;
-    }
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                width: 100%;
+                background-color: #ffb3d9;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 10;
+            }
 
-    nav.open {
-        display: block;
-    }
+            nav.open {
+                display: block;
+            }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+            }
 
-    nav ul li {
-        margin: 10px 0;
-    }
+            nav ul li {
+                margin: 10px 0;
+            }
 
-    .hamburger-menu {
-        display: block;
-        cursor: pointer;
-        padding: 10px;
-        border: none;
-        background: transparent;
-    }
+            .hamburger-menu {
+                display: block;
+                cursor: pointer;
+                padding: 10px;
+                border: none;
+                background: transparent;
+            }
 
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px 0;
-        transition: 0.4s;
-    }
+            .bar {
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                margin: 5px 0;
+                transition: 0.4s;
+            }
 
-    .change .bar1 {
-        transform: translate(0, 11px) rotate(-45deg);
-    }
+            .change .bar1 {
+                transform: translate(0, 11px) rotate(-45deg);
+            }
 
-    .change .bar2 {opacity: 0;}
+            .change .bar2 {opacity: 0;}
 
-    .change .bar3 {
-        transform: translate(0, -11px) rotate(45deg);
-    }
+            .change .bar3 {
+                transform: translate(0, -11px) rotate(45deg);
+            }
 
-    .logo {
-        font-size: 1.8em;
-    }
+            .logo {
+                font-size: 1.8em;
+            }
 
-    main {
-        padding: 30px 15px;
-    }
+            main {
+                padding: 30px 15px;
+            }
 
-    .members-list h2 {
-        font-size: 1.8em;
-    }
+            .members-list h2 {
+                font-size: 1.8em;
+            }
 
-    .member-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5em;
-    }
+            .member-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5em;
+            }
 
-    .learn-more-btn {
-        margin-top: 0.5em;
-    }
+            .learn-more-btn {
+                margin-top: 0.5em;
+            }
 
-    .member-info {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3em;
-    }
+            .member-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.3em;
+            }
 
-    .member-tag {
-        font-size: 0.6em;
-        padding: 0.2em 0.5em;
-    }
-}
+            .member-tag {
+                font-size: 0.6em;
+                padding: 0.2em 0.5em;
+            }
+        }
 
-/* Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-</style>
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -280,12 +286,10 @@ footer {
                     </div>
                     <button class="learn-more-btn" onclick="toggleDetails('member1')">Learn More</button>
                     <div class="member-details" id="member1">
-                        Phone Number:  9kdj
-                        Roblox User: maybe
-                        Gender: Female
-                        Age: 1
-                
-                        
+                        Phone Number: 12345678910
+                        Roblox User: 123456789101112
+                        Gender: Femalee
+                        Age: 99
                     </div>
                 </li>
                 <li class="member-item">
@@ -295,11 +299,9 @@ footer {
                     <button class="learn-more-btn" onclick="toggleDetails('member2')">Learn More</button>
                     <div class="member-details" id="member2">
                         Phone Number: 01121939147
-                    
                     </div>
                     <div class="member-details" id="member2">
                         Roblox User: aarizeusoff0609
-                    
                     </div>
                     <div class="member-details" id="member2">
                         Gender: Male
@@ -358,3 +360,5 @@ footer {
     </script>
 </body>
 </html>
+
+I've updated the information within the <div class="member-details" id="member1"> for AimyPlayz. Let me know if you need any other changes!
